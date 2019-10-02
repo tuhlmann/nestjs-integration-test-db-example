@@ -13,6 +13,11 @@ To clarify: The TeacherUser has the foreign key `user` and `teacher`. In order t
 the TeacherUser, the `test.utils.ts`-Component needs to know the order of the entities. Because
 TeacherUser can not be inserted, without an User or Teacher entity. 
 
+### NOTE:
+
+This branch does not use the fixtures and it uses `TypeOrmModule.forFeature` directly, not
+retrieving the repository through the connection.
+
 ## Install
 
 ```
